@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DevToolsShowcase</title>
-  <link rel="icon" type="image/png" href="src/img/logo.png">
+  <link rel="icon" type="image/png" href="../img/logo.png">
 </head>
 
 <!-- HEADER -->
@@ -12,15 +12,15 @@
 <body>
     <header class="header_container">
         <div class="nav_container" aria-label="Main navigation">
-            <img src="src/img/logo.png" alt="DevToolsShowcase logo" class="site_logo">
-            <a href="src/pages/index.html" class="logo" aria-label="Go to homepage"> 
+            <img src="../img/logo.png" alt="DevToolsShowcase logo" class="site_logo">
+            <a href="index.html" class="logo" aria-label="Go to homepage"> 
                 <h4><span>DevTools</span>Showcase</h4>
             </a>
             <nav>
                 <ul class="header_menu">
-                    <li><a href="src/pages/index.html">Home</a></li>
-                    <li><a href="src/pages/tools.html">Tools</a></li>
-                    <li><a href="src/pages/index.html#about">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="index.html#about">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,10 +36,13 @@
 
         <!-- HERO -->
         <section class="hero">
+          <picture>
+            <img src="../img/main_photo.png" alt="Main illustration for the site">
+          </picture>
             <div class="overlay">
               <h1>Dev Tools Showcase</h1>
               <p>Is a collection of small, practical utilities and code snippets designed to help developers in their daily work. Explore tools by category, view live demos, and find ready-to-use snippets for your projects.</p>
-              <button class = "learn_more_button">Learn more now</button>
+              <button class = "learn_more_button" aria-label="Learn more about Dev Tools Showcase">Learn more now</button>
             </div>
         </section>
         
@@ -47,38 +50,44 @@
         <section class="top_tools">
             <h2>Top tools today</h2>
             
-            <a href="src/pages/details.html" class="tool_card">
-                <img src="src/img/top_tool_photo1.png" alt="Top tool 1 preview photo">
+            <article class="tool_card">
+              <a href="details.html">
+                <img src="../img/top_tool_photo1.png" alt="Top tool 1 preview photo">
                 <div class="top_tool_info">
                     <p class="topic">Topic</p>
                     <h3>Tool Name</h3>
                     <p>Details about tool short description of it.</p>
                     <p class="info"><strong>Author | Date</strong></p>
                 </div>
-            </a>
+              </a>
+            </article>
 
-            <a href="src/pages/details.html" class="tool_card">
-                <img src="src/img/top_tool_photo2.png" alt="Top tool 2 preview photo">
+            <article class="tool_card">
+              <a href="details.html" class="tool_card">
+                <img src="../img/top_tool_photo2.png" alt="Top tool 2 preview photo">
                 <div class="top_tool_info">
                     <p class="topic">Topic</p>
                     <h3>Tool Name</h3>
                     <p>Details about tool short description of it.</p>
                     <p class="info"><strong>Author | Date</strong></p>
                 </div>
-            </a>
+              </a>
+            </article>
 
-            <a href="src/pages/details.html" class="tool_card">
-                <img src="src/img/top_tool_photo3.png" alt="Top tool 3 preview photo">
+            <article class="tool_card">
+              <a href="details.html" class="tool_card">
+                <img src="../img/top_tool_photo3.png" alt="Top tool 3 preview photo">
                 <div class="top_tool_info">
                     <p class="topic">Topic</p>
                     <h3>Tool Name</h3>
                     <p>Details about tool short description of it.</p>
                     <p class="info"><strong>Author | Date</strong></p>
                 </div>
-            </a>
+              </a>
+            </article>
 
             <div class="see_list_button">
-                <a href="src/pages/tools.html" class="see_list">See list</a>
+                <a href="tools.html" class="see_list">See list</a>
             </div>
                 
         </section>
@@ -112,7 +121,7 @@
     <div class="footer_left">
       <div class="footer_section">
         <strong>Dev Tools Showcase</strong>
-        <a href="src/pages/about.html">About</a>
+        <a href="about.html">About</a>
         <a href="#">Author</a>
         <a href="#">Technologies</a>
       </div>
